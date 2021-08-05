@@ -132,7 +132,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: '/mail.php',
+      url: 'https://formspree.io/f/xjvjajok',
       data: formData,
       success: function() {
         $('#contact-modal').modal('hide');
