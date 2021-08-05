@@ -721,7 +721,7 @@
 <!-- Contact me modal -->
 
 <!-- Thank you modal -->
-<div class="modal fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="thanks-modal">
+<!-- <div class="modal fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="thanks-modal">
     <div class="modal-dialog modal-center" role="document">
         <div class="modal-content" >
             <div class="modal-body">
@@ -736,7 +736,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Thank you modal -->
 
 <!-- Error message modal -->
@@ -770,5 +770,27 @@
 <script src="js/wow.min.js"></script>
 
 <script src="js/theme.js"></script>
+<script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset()
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 </body>
 </html>
