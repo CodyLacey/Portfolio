@@ -3,7 +3,7 @@ $(document).ready(function () {
     'use strict';
 
     function wowInit() {
-        var scrollingAnimations = false; // Set false for turn off animation
+        var scrollingAnimations = true; // Set false for turn off animation
         if(scrollingAnimations){
             $(window).on('load', function () {
                 setTimeout(function () {
