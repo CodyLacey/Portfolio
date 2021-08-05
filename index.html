@@ -308,7 +308,7 @@
                                     <img src="media/portfolio-images/portfolio-1.jpg" alt="">
                                 </div>
                                 <div class="portfolio-name">
-                                    <span>Shop web app “Patty”</span>
+                                    <span>Project1</span>
                                 </div>
                                 
                             </a>
@@ -319,7 +319,7 @@
                                     <img src="media/portfolio-images/portfolio-2.jpg" alt="">
                                 </div>
                                 <div class="portfolio-name">
-                                    <span>Startup website “Phoenix”</span>
+                                    <span>Project2</span>
                                 </div>
                                 
                             </a>
@@ -330,7 +330,7 @@
                                     <img src="media/portfolio-images/portfolio-3.jpg" alt="">
                                 </div>
                                 <div class="portfolio-name">
-                                    <span>Corporate chat “eWesta”</span>
+                                    <span>Project3</span>
                                 </div>
                                 
                             </a>
@@ -341,7 +341,7 @@
                                     <img src="media/portfolio-images/portfolio-4.jpg" alt="">
                                 </div>
                                 <div class="portfolio-name">
-                                    <span>Restaraunt web app “Foody”</span>
+                                    <span>Project4</span>
                                 </div>
                                 
                             </a>
@@ -389,17 +389,17 @@
                     </div>
                 </div>
             </div>
-            <form name="contact" method="POST" data-netlify="true" action="#" class="wow slideInRight js-footer-form">
+            <form name="contact" method="POST" data-netlify="true" action="https://formspree.io/f/xjvjajok" class="wow slideInRight js-footer-form">
                 <div class="form-wrapper">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <input class="form-field js-field-name" type="text" placeholder="Name" required>
+                            <input class="form-field js-field-name" type="text" placeholder="Name" name="name" required>
                             <span class="form-validation"></span>
                             <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
                         </div>
 
                         <div class="form-group">
-                            <input class="form-field js-field-email" type="email" placeholder="E-mail" required>
+                            <input class="form-field js-field-email" type="email" placeholder="E-mail" name="_replyto" required>
                             <span class="form-validation"></span>
                             <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
                         </div>
@@ -410,7 +410,7 @@
                             <span class="form-validation"></span>
                         </div>
                         <div class="submit-holder">
-                            <input class="site-btn" type="submit" value="Send message">
+                            <input class="site-btn" type="submit" value="Send message" name="message">
                         </div>
                     </div>
                 </div>
@@ -432,7 +432,7 @@
 </footer>
 
 <!-- Portfolio modal -->
-<!-- <div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal">
+<div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content" >
             <div class="modal-body" data-name="patty">
@@ -669,7 +669,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <!-- Portfolio modal -->
 
 <!-- Contact me modal -->
@@ -685,23 +685,23 @@
                         Drop me a letter and start your project right now! Just do it.</p>
                 </div>
                 <div class="modal-form">
-                    <form name="contact" method="post" data-netlify="true" action="#" class="js-modal-form">
+                    <form name="contact" method="post" data-netlify="true" action="https://formspree.io/f/xjvjajok" class="js-modal-form">
                         <div class="row form-wrapper">
                             <div class="col-lg-5 col-md-5">
                                 <div class="form-group">
-                                    <input class="form-field js-field-name" type="text" placeholder="Name" required>
+                                    <input class="form-field js-field-name" type="text" placeholder="Name" name="name" required>
                                     <span class="form-validation"></span>
                                     <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-field js-field-email" type="email" placeholder="E-mail" required>
+                                    <input class="form-field js-field-email" type="email" placeholder="E-mail" name="_replyto" required>
                                     <span class="form-validation"></span>
                                     <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
                                 </div>
                             </div>
                             <div class="col-lg-7 col-md-7">
                                 <div class="form-group">
-                                    <textarea class="form-field js-field-message" placeholder="Message" required></textarea>
+                                    <textarea class="form-field js-field-message" placeholder="Message" name="message" required></textarea>
                                     <span class="form-validation"></span>
                                 </div>
                             </div>
