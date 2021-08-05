@@ -130,22 +130,22 @@ $(document).ready(function () {
         message: message
     };
 
-    // $.ajax({
-    //   type: "POST",
-    //   url: 'https://formspree.io/f/xjvjajok',
-    //   data: formData,
-    //   success: function() {
-    //     $('#contact-modal').modal('hide');
-    //     $('#thanks-modal').modal('show');
-    //   },
-    //   error: function() {
-    //     console.log('error');
-    //     $('#contact-modal').modal('hide');
-    //     // $('#error-modal').modal('show');
-    //     $('#thanks-modal').modal('show');
+    $.ajax({
+      type: "POST",
+      url: 'https://formspree.io/f/xjvjajok',
+      data: formData,
+      success: function() {
+        $('#contact-modal').modal('hide');
+        $('#thanks-modal').modal('show');
+      },
+      error: function() {
+        console.log('error');
+        $('#contact-modal').modal('hide');
+        // $('#error-modal').modal('show');
+        $('#thanks-modal').modal('show');
 
-    //   }
-    // });
+      }
+    });
   }
 
 });
