@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 	$emailTo = "cody@codylacey.com"; // Enter your email for feedbacks here
+=======
+	$emailTo = "cody605@gmail.com"; // Enter your email for feedbacks here.
+>>>>>>> b2ed29c143528c6cc6dc19baa23e59cb34c73cd1
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=utf-8\r\n";
